@@ -12,15 +12,19 @@ canvas {
 }
 .intro-typing {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.5em solid var(--green-bright); /* The typewriter cursor */
+  border-right: 0.3em solid var(--green-bright); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: typing 1.75s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.intro-typing span {
+  height: 0.75em;
+  line-height: 1em;
+  letter-spacing: 5px;
 }
 .intro-title {
   font-family: "NTR", sans-serif;
   font-size: 86px;
   color: var(--lightest-slate);
-  letter-spacing: 0.1em;
 }
 /* The typing effect */
 @keyframes typing {
@@ -42,19 +46,19 @@ canvas {
     border-color: var(--green-bright);
   }
 }
-/* .intro-name {
+.intro-name {
   font-family: "NTR", sans-serif;
   color: var(--green-bright);
   font-weight: bold;
   font-size: 86px;
-} */
+}
 
 .intro-subtitle {
-  margin-top: -36px;
+  margin-top: -10px;
   font-family: "NTR", sans-serif;
   color: var(--slate);
   font-weight: 300;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .intro-desc {
@@ -107,7 +111,7 @@ b {
 
   .intro-subtitle {
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
 

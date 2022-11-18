@@ -25,12 +25,14 @@ class Intro extends React.Component {
           <span className="intro-title">
             {"hi, "}
             <span className="intro-name">{"aimi"}</span>
-            {" here."}
+            {" here :)"}
           </span>
         </div>
 
         <FadeInSection>
-          <div className="intro-subtitle">I create stuff sometimes.</div>
+          <div className="intro-subtitle">
+            Yeah, I speak three languages: Java, JavaScript, and Python!
+          </div>
           <div className="intro-desc">
             I'm a software engineer based in Atlanta, Georgia. I have great
             interest in full-stack development, artificial intelligence,
