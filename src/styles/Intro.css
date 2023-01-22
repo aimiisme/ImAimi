@@ -14,7 +14,7 @@ canvas {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.3em solid var(--green-bright); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  animation: typing 1.75s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3.75s steps(60, end), blink-caret 0.75s step-end infinite;
 }
 .intro-typing span {
   height: 0.75em;

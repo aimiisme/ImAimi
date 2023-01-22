@@ -24,8 +24,8 @@ class Intro extends React.Component {
         <div className="intro-typing">
           <span className="intro-title">
             {"hi, "}
-            <span className="intro-name">{"aimi"}</span>
-            {" here :)"}
+            <span className="intro-name">{"i'm"}</span>
+            {" aimi :)"}
           </span>
         </div>
 
