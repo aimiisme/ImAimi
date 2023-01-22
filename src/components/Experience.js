@@ -24,7 +24,7 @@ class Experience extends React.Component {
           <div className="section-header ">
             <span className="section-title">/ experience</span>
           </div>
-          {/* <ExpList></ExpList> */}
+          <ExpList></ExpList>
         </FadeInSection>
       </div>
     );
