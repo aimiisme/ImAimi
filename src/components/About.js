@@ -25,9 +25,9 @@ class About extends React.Component {
           {" "}
           Kennesaw State University
         </a>{" "}
-        and a <b>Frontend software engineer</b> at{" "}
+        and a <b>Frontend Software Engineer</b> at{" "}
         <a target="_blank" href="https://developers.google.com/community/gdsc">
-          GoogleDSC
+          Google DSC
         </a>
         . I have great interest in full-stack development that just work across
         all platforms and browsers. I care deeply about building interfaces that
