@@ -31,7 +31,7 @@ const ExpList = () => {
   const experienceItems = {
     GoogleDSC: {
       jobTitle: "Software Development Engineer @",
-      duration: "MAR 2022 - PRESENT",
+      duration: "MAR 2022 - MAR 2023",
       desc: [
         "Design, implement and maintain front-end code of 8 responsive web pages and 20+ UI/UX features.",
         "Participate in product releases and code reviews with 4 other team leads to update sites throughout production lifecycle.",

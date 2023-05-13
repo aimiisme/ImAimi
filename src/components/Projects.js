@@ -1,10 +1,9 @@
 import React from "react";
-import ExpList from "./ExpList";
 import ProjectList from "./ProjectList";
 import "../styles/Projects.css";
 import FadeInSection from "./FadeInSection";
 
-class Experience extends React.Component {
+class Projects extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -20,17 +19,16 @@ class Experience extends React.Component {
   }
   render() {
     return (
-      <div id="experience">
+      <div id="projects">
         <FadeInSection>
           <div className="section-header ">
             <span className="section-title">/ side projects</span>
           </div>
-          <ExpList></ExpList>
-          {/* <ProjectList></ProjectList> */}
+          <ProjectList></ProjectList>
         </FadeInSection>
       </div>
     );
   }
 }
 
-export default Experience;
+export default Projects;
