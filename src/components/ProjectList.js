@@ -13,7 +13,15 @@ function Item(props) {
     <Paper
       className="proj-item"
       elevation={10}
-      sx={{ bgcolor: "var(--lightest-navy)", borderRadius: "30px" }}
+      // sx={{ bgcolor: "var(--lightest-navy)", borderRadius: "30px" }}
+      sx={{
+        backgroundImage: `linear-gradient(45deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35)),url(${props.item.image})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no repeat",
+        backgroundPosition: "center",
+        opacity: "10",
+        borderRadius: "30px",
+      }}
     >
       <Typography
         className="proj-title"
