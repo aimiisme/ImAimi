@@ -25,11 +25,11 @@ class About extends React.Component {
           {" "}
           Kennesaw State University
         </a>{" "}
-        and a <b>Frontend Software Engineer</b> at{" "}
+        and a <b>Backend Software Engineer Intern</b> at{" "}
         <a target="_blank" href="https://developers.google.com/community/gdsc">
-          Google DSC
+          Avanade Inc.{" "}
         </a>
-        . I have great interest in full-stack development that just work across
+        I have great interest in full-stack development that just work across
         all platforms and browsers. I care deeply about building interfaces that
         are usable and pleasant for the most number of people possible.
       </p>
@@ -45,11 +45,13 @@ class About extends React.Component {
 
     const tech_stack = [
       "Javascript ES6+",
-      "Python",
       "React.js",
-      "Java",
+      "Python",
       "Node.js",
+      "Java",
+      "PHP",
       "HTML & CSS",
+      "SQL Server",
     ];
 
     const tech_items = tech_stack.map((stack) => <li>{stack}</li>);
