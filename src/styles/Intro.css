@@ -10,29 +10,29 @@
 canvas {
   width: 200px !important;
 }
-.intro-typing {
+.intro-typing h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.3em solid var(--green-bright); /* The typewriter cursor */
+  border-right: 0.1em solid var(--green-bright); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  animation: typing 3.75s steps(60, end), blink-caret 0.75s step-end infinite;
-}
-.intro-typing span {
-  height: 0.75em;
-  line-height: 1em;
-  letter-spacing: 5px;
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .intro-title {
+  height: 0.75em;
+  line-height: 1em;
+  letter-spacing: 0.15em;
   font-family: "NTR", sans-serif;
   font-size: 86px;
+  font-weight: bold;
   color: var(--lightest-slate);
 }
+
 /* The typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -45,12 +45,6 @@ canvas {
   50% {
     border-color: var(--green-bright);
   }
-}
-.intro-name {
-  font-family: "NTR", sans-serif;
-  color: var(--green-bright);
-  font-weight: bold;
-  font-size: 86px;
 }
 
 .intro-subtitle {
@@ -105,9 +99,6 @@ b {
   .intro-title {
     font-size: 46px;
   }
-  .intro-name {
-    font-size: 46px;
-  }
 
   .intro-subtitle {
     margin: 0;
@@ -125,6 +116,6 @@ b {
   .intro-contact {
     font-size: 16px;
     align-self: center;
-    margin-left: 30%;
+    margin: 10px auto;
   }
 }

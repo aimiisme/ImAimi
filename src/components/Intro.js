@@ -22,11 +22,7 @@ class Intro extends React.Component {
     return (
       <div id="intro">
         <div className="intro-typing">
-          <span className="intro-title">
-            {"hi, "}
-            <span className="intro-name">{"i'm"}</span>
-            {" aimi :)"}
-          </span>
+          <h1 className="intro-title">hi, i'm aimi</h1>
         </div>
 
         <FadeInSection>
@@ -34,13 +30,15 @@ class Intro extends React.Component {
             Yeah, I speak three languages: Java, JavaScript, and Python!
           </div>
           <div className="intro-desc">
-            I'm a software engineer based in Atlanta, Georgia. I have great
-            interest in full-stack development, artificial intelligence,
-            human-computer interactions, and everything in between.
+            I'm a software engineer from Atlanta, Georgia, with a strong
+            interest in full-stack development and artificial intelligence. I
+            enjoy combining my skills in both areas to create cutting-edge
+            solutions that enhance user experiences. Let's push the boundaries
+            of technology together!
           </div>
           <a href="mailto:aimitranhoang@gmail.com" className="intro-contact">
             <EmailIcon sx={{ marginRight: 1 }}></EmailIcon>
-            {"  " + "Say hi!"}
+            {"  " + "Contact me"}
           </a>
         </FadeInSection>
       </div>
