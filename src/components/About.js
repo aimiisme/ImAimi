@@ -19,7 +19,7 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        Hi, I'm Aimi Tran, currently a third year <b>Computer Science</b> major
+        Hi, I'm Aimi Tran, currently a fourth year <b>Computer Science</b> major
         at
         <a target="_blank" href="https://www.kennesaw.edu/">
           {" "}

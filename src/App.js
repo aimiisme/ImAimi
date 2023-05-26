@@ -10,6 +10,7 @@ import "./styles/Global.css";
 function App() {
   return (
     <div className="App">
+      <div className="galaxy-bg"></div>
       <div id="content">
         <Intro></Intro>
         <About></About>

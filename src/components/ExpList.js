@@ -1,43 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Tabs, Tab, Typography, Box } from "@mui/material";
 import FadeInSection from "./FadeInSection";
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
-  };
-}
-
 const ExpList = () => {
-  const [value, setValue] = React.useState(0);
-
   const experienceItems = {
     Avanade: {
       jobTitle: "Backend Developer Intern @",
@@ -61,40 +25,34 @@ const ExpList = () => {
     },
   };
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
-    <Box sx={{ flexGrow: 1, display: "flex", height: 300 }}>
-      <Tabs
-        orientation="vertical"
-        value={value}
-        onChange={handleChange}
-        sx={{ borderRight: 5, borderColor: "divider" }}
-      >
-        {Object.keys(experienceItems).map((key, i) => (
-          <Tab label={key} {...a11yProps(i)} />
-        ))}
-      </Tabs>
+    <div id="timeline" className="timeline-containter">
       {Object.keys(experienceItems).map((key, i) => (
-        <TabPanel value={value} index={i}>
-          <span className="joblist-job-title">
-            {experienceItems[key]["jobTitle"] + " "}
-          </span>
-          <span className="joblist-job-company">{key}</span>
-          <div className="joblist-duration">
-            {experienceItems[key]["duration"]}
-          </div>
+        <div className="timeline-block">
+          <div className="timeline-img"></div>
+          <div className="timeline-content">
+            <h2>
+              {experienceItems[key]["jobTitle"] + " "}
+              <span className="joblist-job-company">{key}</span>
+            </h2>
 
-          <ul className="job-description">
-            {experienceItems[key]["desc"].map(function (descItem, i) {
-              return <li key={i}>{descItem}</li>;
-            })}
-          </ul>
-        </TabPanel>
+            <ul className="job-description">
+              {experienceItems[key]["desc"].map(function (descItem, i) {
+                return (
+                  <FadeInSection>
+                    <li key={i}>{descItem}</li>
+                  </FadeInSection>
+                );
+              })}
+            </ul>
+
+            <span className="timeline-date">
+              {experienceItems[key]["duration"]}
+            </span>
+          </div>
+        </div>
       ))}
-    </Box>
+    </div>
   );
 };
 
