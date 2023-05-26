@@ -17,6 +17,7 @@ class Projects extends React.Component {
       activeKey: eventKey,
     });
   }
+
   render() {
     return (
       <div id="projects">

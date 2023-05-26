@@ -2,6 +2,11 @@
   padding: 15%;
   min-height: 60vh;
 }
+.project-card {
+  background-color: var(--austronaut);
+  border-radius: 20px;
+  height: 300px;
+}
 .proj-item {
   max-width: 100%;
   position: relative;

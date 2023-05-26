@@ -1,6 +1,16 @@
 import React from "react";
 
-import { Typography, Link, Paper } from "@mui/material";
+import {
+  Typography,
+  Link,
+  Paper,
+  Box,
+  Card,
+  CardActions,
+  CardContent,
+  Grid,
+  Button,
+} from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -52,7 +62,7 @@ function Item(props) {
 const ProjectList = (props) => {
   const items = [
     {
-      name: "Google DSC Landing Page",
+      name: "Google DSC Web App",
       duration: "MAR 2022",
       techstack: "ReactJS, Material UI, JavaScript(ES5+)",
       description: [
@@ -85,13 +95,51 @@ const ProjectList = (props) => {
       image: "/assets/portfolio_v1.png",
     },
   ];
+  function Card(props) {
+    return (
+      <div className="project-card">
+        <CardContent sx={{ p: 5 }}>
+          <Typography variant="h6" component="div" color="var(--white)">
+            {props.item.name}
+          </Typography>
 
+          <Typography
+            variant="body2"
+            color="var(--lightest-slate)"
+            sx={{ mt: 5 }}
+          >
+            {props.item.techstack}
+          </Typography>
+        </CardContent>
+        <CardActions sx={{ p: 5 }}>
+          <Button size="small" href={props.item.github} target="_blank">
+            Learn More
+          </Button>
+        </CardActions>
+      </div>
+    );
+  }
   return (
-    <Carousel NextIcon={<ChevronRightIcon />} PrevIcon={<ChevronLeftIcon />}>
-      {items.map((item, i) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
+    <>
+      <Carousel NextIcon={<ChevronRightIcon />} PrevIcon={<ChevronLeftIcon />}>
+        {items.map((item, i) => (
+          <Item key={i} item={item} />
+        ))}
+      </Carousel>
+      <Box sx={{ flexGrow: 1, mt: 10 }}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          {items.map((item, i) => (
+            <Grid item xs={2} sm={4} md={4} key={i}>
+              <Card variant="outlined" key={i} item={item}></Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </>
   );
 };
 
