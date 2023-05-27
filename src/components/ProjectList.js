@@ -84,9 +84,30 @@ const ProjectList = (props) => {
       image: "/assets/weatherapp.png",
     },
     {
-      name: "Portfolio Website v.1",
+      name: "Portfolio Website (Glassmorphism)",
       duration: "2021",
-      techstack: "HTML, CSS, JavaScript(ES5+), JSON API",
+      techstack: "HTML, CSS, JavaScript(ES5+)",
+      description: [
+        "A personal portfolio website with the theme of glassmorphism, inspired by Mac OS Big Sur. This is my first project when I start coding with HTML and CSS.",
+      ],
+      link: "https://aimihere.netlify.app/",
+      github: "https://github.com/aimiisme/Portfolio-Website",
+      image: "/assets/portfolio_v1.png",
+    },
+    {
+      name: "Portfolio Website v.2 (Fly to the Galaxy)",
+      duration: "MAY 2023",
+      techstack: "JavaScript(ES5+), CSS, ReactJS, Material UI",
+      description: ["Official personal website - version of 2023"],
+      link: "https://aimihere.netlify.app/",
+      github: "https://github.com/aimiisme/Im_Aimi",
+      image: "/assets/portfolio_v2.png",
+    },
+    {
+      name: "CRUD Management System",
+      duration: "MAY 2023",
+      techstack:
+        "MS SQL Server, NodeJS, ReactJS, JavaScript(ES5+), Bootstrap, JSON API ",
       description: [
         "A personal portfolio website with the theme of glassmorphism, inspired by Mac OS Big Sur. This is my first project when I start coding with HTML and CSS.",
       ],
@@ -98,7 +119,7 @@ const ProjectList = (props) => {
   function Card(props) {
     return (
       <div className="project-card">
-        <CardContent sx={{ p: 5 }}>
+        <CardContent sx={{ px: 5, pt: 5 }}>
           <Typography variant="h6" component="div" color="var(--white)">
             {props.item.name}
           </Typography>
@@ -106,12 +127,12 @@ const ProjectList = (props) => {
           <Typography
             variant="body2"
             color="var(--lightest-slate)"
-            sx={{ mt: 5 }}
+            sx={{ mt: 2 }}
           >
             {props.item.techstack}
           </Typography>
         </CardContent>
-        <CardActions sx={{ p: 5 }}>
+        <CardActions sx={{ px: 5 }}>
           <Button size="small" href={props.item.github} target="_blank">
             Learn More
           </Button>
