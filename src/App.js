@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Credit from "./components/Credit";
 import "./App.css";
 import "./styles/Global.css";
 
@@ -16,6 +17,7 @@ function App() {
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
+        <Credit></Credit>
       </div>
       <SideNavbar></SideNavbar>
     </div>

@@ -76,13 +76,6 @@ class About extends React.Component {
                 })}
               </ul>
               {[two]}
-              <a
-                href="/assets/AimiResume.pdf"
-                download="AimiResume.pdf"
-                className="resume-btn"
-              >
-                Download Resume
-              </a>
             </div>
             <div className="about-image">
               <img src={"/assets/me3.jpg"} />

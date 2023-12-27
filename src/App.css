@@ -160,4 +160,9 @@ html {
   .section-title {
     font-size: 32px;
   }
+  .credit {
+    align-items: center;
+    display: flex;
+    padding-top: 100px;
+  }
 }

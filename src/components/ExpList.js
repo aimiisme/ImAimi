@@ -7,20 +7,20 @@ const ExpList = () => {
       jobTitle: "Backend Developer Intern @",
       duration: "MAY 2023 - AUG 2023",
       desc: [
-        "Develop and deliver detailed IT solutions through consulting project activities.",
-        "Bring interpersonal and technical skills to engagements - Proactively identify problems, system architecture definition.",
-        "Quality assurance (QA) testing.",
-        "Programming using C#, Java,TypeScript, JavaScript (React/Angular/Vue) and SQL Server, MySQL, Cosmos, MongoDB.",
+        "Developed expertise in Microsoft technologies including Azure DevOps and Microsoft SQL Server.",
+        "Employed SSMS and SQL Server to update the database and remove inactive sites from the search system of client’s performance tool, resulting in enhanced user experiences.",
+        "Optimized search accuracy algorithm using C# and third-party JavaScript libraries, resulting in enhanced search efficiency.",
+        "Collaborated with 3 senior developers and cross-functional teams on client projects, contributing ideas for tool enhancement and demonstrating effective problem-solving.",
       ],
     },
     GoogleDSC: {
       jobTitle: "Software Development Engineer @",
       duration: "MAR 2022 - MAR 2023",
       desc: [
-        "Design, implement and maintain front-end code of 8 responsive web pages and 20+ UI/UX features.",
-        "Participate in product releases and code reviews with 4 other team leads to update sites throughout production lifecycle.",
-        "Supervise, lead, and mentor 3 new junior front-end developers on team in expanding JavaScript and React skillset.",
-        "Work in an Agile, collaborative environment to receive design requirements, peer program, and test applications.",
+        "Designed, implemented and maintained front-end code of 8 responsive web pages and 20+ UI/UX features.",
+        "Participated in product releases and code reviews with 4 other team leads to update sites throughout production lifecycle.",
+        "Supervised, lead, and mentored 3 new junior front-end developers on team in expanding JavaScript and React skillset.",
+        "Worked in an Agile, collaborative environment to receive design requirements, peer program, and test applications.",
       ],
     },
   };

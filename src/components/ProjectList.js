@@ -79,8 +79,8 @@ const ProjectList = (props) => {
       description: [
         "A user-friendly Weather App for user to track the weather forecast around 200,000 cities in the world map.",
       ],
-      link: "",
-      github: "https://github.com/KSU-Google-DSC/Webapp",
+      link: "https://github.com/aimiisme/Weather-App",
+      github: "https://github.com/aimiisme/Weather-App",
       image: "/assets/weatherapp.png",
     },
     {
@@ -99,21 +99,9 @@ const ProjectList = (props) => {
       duration: "MAY 2023",
       techstack: "JavaScript(ES5+), CSS, ReactJS, Material UI",
       description: ["Official personal website - version of 2023"],
-      link: "https://aimihere.netlify.app/",
+      link: "https://aimiherev2.netlify.app/",
       github: "https://github.com/aimiisme/Im_Aimi",
       image: "/assets/portfolio_v2.png",
-    },
-    {
-      name: "CRUD Management System",
-      duration: "MAY 2023",
-      techstack:
-        "MS SQL Server, NodeJS, ReactJS, JavaScript(ES5+), Bootstrap, JSON API ",
-      description: [
-        "A personal portfolio website with the theme of glassmorphism, inspired by Mac OS Big Sur. This is my first project when I start coding with HTML and CSS.",
-      ],
-      link: "https://aimihere.netlify.app/",
-      github: "https://github.com/aimiisme/Portfolio-Website",
-      image: "/assets/portfolio_v1.png",
     },
   ];
   function Card(props) {
