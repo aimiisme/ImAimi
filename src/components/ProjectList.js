@@ -99,7 +99,7 @@ const ProjectList = (props) => {
       duration: "MAY 2023",
       techstack: "JavaScript(ES5+), CSS, ReactJS, Material UI",
       description: ["Official personal website - version of 2023"],
-      link: "https://aimiherev2.netlify.app/",
+      link: "http://aimiisme.github.io/ImAimi",
       github: "https://github.com/aimiisme/Im_Aimi",
       image: "/assets/portfolio_v2.png",
     },
