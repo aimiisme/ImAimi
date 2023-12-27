@@ -100,7 +100,7 @@ const ProjectList = (props) => {
       techstack: "JavaScript(ES5+), CSS, ReactJS, Material UI",
       description: ["Official personal website - version of 2023"],
       link: "https://aimiisme.github.io/ImAimi",
-      github: "https://github.com/aimiisme/Im_Aimi",
+      github: "https://github.com/aimiisme/ImAimi",
       image: "/assets/portfolio_v2.png",
     },
   ];
