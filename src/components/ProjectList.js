@@ -88,7 +88,7 @@ const ProjectList = (props) => {
       duration: "2021",
       techstack: "HTML, CSS, JavaScript(ES5+)",
       description: [
-        "A personal portfolio website with the theme of glassmorphism, inspired by Mac OS Big Sur. This is my first project when I start coding with HTML and CSS.",
+        "A personal portfolio website (2021 version) with the theme of glassmorphism, inspired by Mac OS Big Sur. This is my first project when I start coding with HTML and CSS.",
       ],
       link: "https://aimihere.netlify.app/",
       github: "https://github.com/aimiisme/Portfolio-Website",
@@ -99,7 +99,7 @@ const ProjectList = (props) => {
       duration: "MAY 2023",
       techstack: "JavaScript(ES5+), CSS, ReactJS, Material UI",
       description: ["Official personal website - version of 2023"],
-      link: "http://aimiisme.github.io/ImAimi",
+      link: "https://aimiisme.github.io/ImAimi",
       github: "https://github.com/aimiisme/Im_Aimi",
       image: "/assets/portfolio_v2.png",
     },
