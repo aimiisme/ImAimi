@@ -1,5 +1,5 @@
 <h2> Hello this is my personal porfolio website. Check it out! </h2>
-https://ImAimi.github.io/
+http://aimiisme.github.io/ImAimi
 <h3> Built with React, JavaScript and Material UI </h3>
 <h3>Demo</h3>
 
